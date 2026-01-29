@@ -86,4 +86,4 @@ Piny Strappingowe: Unikaj używania GPIO 10 w ESP32-C3, jeśli planujesz wymusza
 
 Impuls Power: Przycisk przypisany do PWR_PIN generuje 100ms impuls niskiego stanu (LOW), co idealnie nadaje się do wybudzania zewnętrznych układów.
 
-Po wgraniu głównego programu na płytkę piloya nalezy sparować w przeciwnym razie będa działać tylko przyciski podstawowe
+Po wgraniu głównego programu na płytkę, pilota należy sparować w przeciwnym razie będa działać tylko przyciski podstawowe
