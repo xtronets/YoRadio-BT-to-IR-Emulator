@@ -34,7 +34,7 @@ Hardware Trigger: Możliwość przypisania impulsu GPIO do dowolnego przycisku (
 Mikrokontroler: ESP32-C3 (np. SuperMini).
 
 
-Nadajnik IR: Dioda IR podłączona do GPIO 5.
+Nadajnik IR: Emulator IR podłączona do GPIO 5.
 
 
 Wyjście Sterujące: Pin GPIO 2 (np. do sygnału wybudzania).
