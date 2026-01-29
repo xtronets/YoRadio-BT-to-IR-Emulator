@@ -6,7 +6,7 @@ Głównym założeniem projektu było moje niezadowolenie z pracy układu Ir w m
 
 Pilot https://www.sofabaton.com/products/u2/
 
-Testy były prowadzone na tym pilocie i płytce ESP32-C3 Zero Pro Mini
+Testy były prowadzone na tym pilocie i płytce ESP32-C3 Zero Pro Mini, Oprogramowanie Maestro V7 by Mieczysław Snawacki
 
 Projekt wykorzystuję bibliotekę https://github.com/h2zero/NimBLE-Arduino jest dostępna w menaderze bibliotek w arduino.
 
