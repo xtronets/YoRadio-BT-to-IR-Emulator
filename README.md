@@ -6,7 +6,7 @@ Głównym założeniem projektu było moje niezadowolenie z pracy układu Ir w m
 
 Pilot https://www.sofabaton.com/products/u2/
 
-Testy były prowadzone na tym pilocie i płytce ESP32-C3 Zero Pro Mini, Oprogramowanie Maestro V7 by Mieczysław Snawacki
+Testy były prowadzone na tym pilocie i płytce ESP32-C3 Zero Pro Mini, Oprogramowanie Maestro V7 by Mieczysław Snawacki (konfiguracje pilota "bluetooth keyboard,android box,android tv")
 
 Projekt wykorzystuję bibliotekę https://github.com/h2zero/NimBLE-Arduino jest dostępna w menaderze bibliotek w arduino.
 
@@ -40,7 +40,7 @@ Nadajnik IR: Emulator IR podłączona do GPIO 5.
 Wyjście Sterujące: Pin GPIO 2 (np. do sygnału wybudzania).
 
 📖 Instrukcja Konfiguracji
-1. Odczyt kodów (Sniffer)
+1. Odczyt kodów (Sniffer) ( W więszkości przypadków można pominać odczyt gdyż w popularnych pilotach kody są takie same)
 Zanim skonfigurujesz główne urządzenie, musisz poznać kody swojego pilota:
 
 Wgraj program ze folderu sniffer.
