@@ -87,3 +87,5 @@ Piny Strappingowe: Unikaj używania GPIO 10 w ESP32-C3, jeśli planujesz wymusza
 Impuls Power: Przycisk przypisany do PWR_PIN generuje 100ms impuls niskiego stanu (LOW), co idealnie nadaje się do wybudzania zewnętrznych układów.
 
 Po wgraniu głównego programu na płytkę, pilota należy sparować w przeciwnym razie będa działać tylko przyciski podstawowe
+
+edit 31.01.26 // Dodałem plik yoradio deepsleep.ino w tej konfiguracji można wyłączać radio przyciskiem power bez oczekiwania na uśpienie
