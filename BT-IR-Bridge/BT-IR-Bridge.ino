@@ -55,7 +55,7 @@ void findAndSend71(uint8_t* pData) {
             if (item.triggerGpio != 0) {
                 Serial.printf("Wyzwalanie GPIO %d\n", item.triggerGpio);
                 digitalWrite(item.triggerGpio, LOW);
-                delay(100);
+                delay(10);
                 digitalWrite(item.triggerGpio, HIGH);
             }
             return;
