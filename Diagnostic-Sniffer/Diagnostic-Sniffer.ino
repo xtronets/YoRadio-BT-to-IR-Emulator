@@ -18,7 +18,8 @@ class MyClientCallbacks : public NimBLEClientCallbacks {
         Serial.println(">>> Połączono. Rozpoczynam parowanie...");
         pClient->secureConnection();
     }
-    void onDisconnect(NimBLEClient* pClient) {
+    // NimBLE 2.x: sygnatura z parametrem reason (bez niego callback nie był wywoływany)
+    void onDisconnect(NimBLEClient* pClient, int reason) override {
         Serial.println(">>> Rozłączono. Szukam ponownie...");
         doConnect = false;
         authenticated = false;

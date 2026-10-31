@@ -7,6 +7,14 @@
 const int IR_PIN = 5; // Pin ir
 const int PWR_PIN = 2; // Pin do wybudzania/usypiania radia
 
+// Uchwyty (handle) charakterystyk HID odczytane snifferem.
+// Zależą od pilota – inny model może mieć inne numery.
+const uint16_t HANDLE_KEYS  = 64;  // raport klawiatury (8 bajtów)
+const uint16_t HANDLE_MEDIA = 71;  // raport Consumer Control (2 bajty)
+
+// Opcjonalnie: łącz się TYLKO z tym pilotem (odkomentuj i wpisz MAC z Serial Monitora)
+// #define REMOTE_MAC "aa:bb:cc:dd:ee:ff"
+
 struct KeyMap64 {
     uint8_t hexPattern[8];
     uint32_t irNecCode;
@@ -20,7 +28,7 @@ struct KeyMap71 {
     int triggerGpio; // Nowe pole: 0 lub numer pinu (np. PWR_PIN)
 };
 
-// --- KLUCZE LICZBOWE I STEROWANIE (Handle: 64) ---
+// --- KLUCZE LICZBOWE I STEROWANIE (HANDLE_KEYS) ---
 const KeyMap64 map64[] = {
     {{0x00, 0x00, 0x52, 0x00, 0x00, 0x00, 0x00, 0x00}, 0xFF18E7, "Gora"},
     {{0x00, 0x00, 0x51, 0x00, 0x00, 0x00, 0x00, 0x00}, 0xFF4AB5, "Dol"},
@@ -40,7 +48,7 @@ const KeyMap64 map64[] = {
     {{0x00, 0x00, 0x76, 0x00, 0x00, 0x00, 0x00, 0x00}, 0xFFB04F, "List"}
 };
 
-// --- MULTIMEDIA (Handle: 71) ---
+// --- MULTIMEDIA (HANDLE_MEDIA) ---
 const KeyMap71 map71[] = {
     // pattern, necCode, nazwa, triggerGpio
     {{0x30, 0x00}, 0x000000, "Power", PWR_PIN},
@@ -52,4 +60,4 @@ const KeyMap71 map71[] = {
     {{0xB3, 0x00}, 0x000000, "FF",    0}
 };
 
-#endif
+#endif
